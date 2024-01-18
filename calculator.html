@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="hero">
+            <div id="answer" class="hidden">0</div>
+            <div class="row">
+                <button class="btn1 gray" id="reset">AC</button>
+                <button class="btn1 gray" onclick="start()">ON</button>
+                <button class="btn4 gray" onclick="appendToAnswer('%');">%</button>
+                <button class="btn2 yellow" onclick="appendToAnswer('/')">÷</button>
+            </div>
+            <div class="row">
+                <button class="btn2 black" onclick="appendToAnswer('7')">7</button>
+                <button class="btn2 black"onclick="appendToAnswer('8')">8</button>
+                <button class="btn2 black" onclick="appendToAnswer('9')">9</button>
+                <button class="btn2 yellow" onclick="appendToAnswer('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="btn2 black" onclick="appendToAnswer('4')">4</button>
+                <button class="btn2 black" onclick="appendToAnswer('5')">5</button>
+                <button class="btn2 black" onclick="appendToAnswer('6')">6</button>
+                <button class="btn3 yellow" onclick="appendToAnswer('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="btn3 black" onclick="appendToAnswer('1')">1</button>
+                <button class="btn2 black" onclick="appendToAnswer('2')">2</button>
+                <button class="btn2 black" onclick="appendToAnswer('3')">3</button>
+                <button class="btn2 yellow" onclick="appendToAnswer('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn2  black" id="btnSpecial" onclick="appendToAnswer('0')">0</button>
+                <button class="btn3 black" onclick="appendToAnswer('.')">.</button>
+                <button class="btn2 yellow" onclick="equals()">=</button>
+            </div>
+        </div>
+        <script src="calculations.js"></script>
+    </body>
+</html>

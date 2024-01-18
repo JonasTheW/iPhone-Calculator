@@ -1,0 +1,86 @@
+@font-face {
+    font-family: iPhone;
+    src: url("SF-Pro-Display-Black.otf");
+}
+body{
+    margin: 0;
+}
+.hero{
+    background-color: black;
+    padding-top: 150px;
+    width: 350px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.row{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#btnSpecial{
+    padding-right: 110px;
+    border-radius: 40px;
+}
+button{
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.btn1,.btn2,.btn3,.btn4{
+    border-radius: 50%;
+    font-size: 20px;
+    border: none;
+    font-family: iPhone;
+    margin: 3px;
+}
+
+.btn1{
+    padding: 20px;  
+}
+.btn2{
+    padding: 20px 29px;
+}
+.btn3{
+    padding: 20px 32px;
+}
+.btn4{
+    padding: 20px 27px;
+}
+
+.yellow{
+    background-color: #FF9F0A;
+    color: white;
+}
+.yellow:hover{
+    color: #FF9F0A;
+    background-color:#fdeed3;
+}
+.gray{
+    background-color: #A5A5A5;
+}
+.gray:hover{
+    background-color:#c2c2c2;
+}
+.black{
+    background-color: #333333;
+    color: white;
+}
+.black:hover{
+    color: #333333;
+    background-color: white;
+}
+.yellow,.black,.gray{
+    transition: 0.3s;
+}
+#answer{
+    color: white;
+    margin-left: auto;
+    padding-right: 20px;
+    width: fit-content;
+    font-size: 3.5rem;
+    font-family: iPhone;
+}
+.hidden{
+    display: none;
+}
